@@ -1,0 +1,57 @@
+//Import Fonts
+
+//Import "Open Sans"
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
+//Import "Droid Serif"
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+
+// Names and values
+
+@sans: 'Open Sans', sans-serif;
+@serif: 'Droid Serif', serif;
+
+// Grayscale
+
+@black: rgba(0, 0, 0, 1);
+@gray-darker:lighten(@black, 5%);
+@gray-dark: lighten(@black, 25%);
+@gray: lighten(@black, 50%);
+@gray-light: lighten(@black, 75%);
+@gray-lighter: lighten(@black, 95%);
+@white: rgba(255, 255, 255, 1);
+@gray-special: rgba(97, 96, 122,1);
+
+//Color
+
+@blue:	rgba(51, 47, 122, .95);
+@blue-light: lighten(@blue, 15%);
+@blue-dark:	darken(@blue, 15%);
+
+@green:	rgba(120, 170, 20, .95);
+@green-light:	lighten(@green, 50%);
+@green-dark:	darken(@green, 15%);
+
+// Links
+@link-color:	@blue;
+@color-link:	@link-color;
+@link-hover:	@blue-dark;
+@hover-link:	@link-hover;
+@link-invert:	spin(@link-color, 180);
+
+// Proporciones tipográficas
+@font-size: 14px; 
+@em: @font-size * 1em;	// atajo para salida en ems, ej. '12/@em'
+@line-height:	@font-size * 1.8;
+@small: @font-size*.8;
+
+//Grilla
+@wrap-width: 980px;
+
+@wrap-1: @wrap-width/1;
+@wrap-2: @wrap-width/2;
+@wrap-3: @wrap-width/3;
+@wrap-4: @wrap-width/4;
+
+
+

@@ -1,0 +1,58 @@
+// Typography 
+
+*{
+	font-family: @sans;
+	font-weight: 400;
+	}
+
+body{
+	font-size: @font-size;
+	}
+
+//heading
+
+h1, h2, h3, h4, h5, h6{
+	font-family: @serif;
+	font-weight: normal;
+	margin: 0 0 @line-height/2 0;
+	line-height:140%;
+	}
+
+h1 {font-size: @font-size*2.2;}
+h2 {font-size: @font-size*1.8;}
+h3 {font-size: @font-size*1.6;}
+h4 {font-size: @font-size*1.4;}
+h5 {font-size: @font-size*1.2;}
+h6 {font-size: @font-size*1;}
+
+a{
+	color: @color-link;
+	text-decoration: none;
+
+	&:hover{
+		color: @link-hover;
+		text-decoration: underline;
+		}
+
+	&:visited{
+		color: fade(@color-link, 10);
+		text-decoration: line-through;
+		}
+	}
+	
+p{
+	margin-bottom: @line-height/2;
+	line-height: @line-height;
+	color: fade(@black, 80%);
+
+	&.big{
+		font-size: @font-size * 1.5;
+		font-weight: 300;
+		line-height: 120%;
+		}
+
+	&.small {
+		font-size: @font-size*.80;
+		line-height: @line-height * .8;
+		}
+	}

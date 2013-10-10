@@ -1,0 +1,132 @@
+
+body{
+	background-color:@gray-lighter;
+	}
+
+header {
+	width:100%;
+	background-color: @gray-special;
+	text-align:center;
+	color:@gray-lighter;
+	}
+
+.wrap{
+	margin:0 auto @font-size;
+	width:@wrap-width;
+	display:block;
+	&:after{
+		content:"";
+		clear:both;
+		display:block;
+		}
+	}
+
+img{
+	max-width:100%;
+	}
+
+nav{
+	ul{
+		display:block;
+		margin-bottom:@font-size;
+		li{
+			display:inline-block;
+			a{
+				padding:10px;
+				display:block;
+				&:hover{
+					background-color:@link-hover;
+					color:@white;
+					text-decoration:none;
+					}
+				
+				}
+			}/*li*/
+		}/*ul*/
+	}/*nav*/
+
+/*content*/
+
+#projects{
+	
+	}
+
+.project{
+	
+	float:left;
+	
+	width:@wrap-4 - @font-size;
+	height:@wrap-4 - @font-size;
+	
+	margin:0 @font-size/2 @font-size;
+	
+	position:relative;
+	overflow:hidden;
+	.rounded(50%);
+	.box-shadow(1px 1px 1px @white);
+	text-align:center;
+	
+			img.vertical{
+			height:100%;
+			width:auto;
+			max-width:200%;
+			}
+	
+	figcaption{
+		display:none;
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		color:@gray-lighter;
+		background:fade(@black,75);
+		span{
+			display:block;
+			&.project-title{
+				width:90%;
+				margin: 47% auto 0;
+				font-size:@font-size*1.2;
+				}/*.project-title*/
+			}/*span*/
+		}/*figcaption*/
+	&:hover{
+		figcaption{
+			display:block;
+			}
+		}
+	}/*project*/
+
+
+section{
+	padding:@font-size 0;
+	
+	&:nth-child(even){
+		background-color:darken(@gray-lighter, 5%);
+		}
+	}
+
+.about-me{
+	float:left;
+	width:@wrap-2 - @font-size;
+	margin-right: @font-size;
+	
+	img{
+		width:@wrap-4 - @font-size;
+		float:left;
+		margin-right: @font-size/2;
+		}
+	
+	}
+
+form{
+	width: @wrap-2;
+	
+	legend{
+		margin-bottom:@font-size/2;
+		}
+	
+	label{
+		line-height:@line-height;
+		}
+	}

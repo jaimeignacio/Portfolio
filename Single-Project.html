@@ -5,16 +5,22 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Jaime Pérez Moena">
 	<meta name="description" content="Portafolio de Diseño Gráfico">
-<!--Styles-->
+<!--Reset Styles-->
 	<link href="css/reset.css" rel="stylesheet" media="all">
-	<link href="css/style.css" rel="stylesheet" media="all">
+<!--Less-->
+	<link rel="stylesheet/less" type="text/css" href="less/styles.less" />
+<!--Fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+<!-- js -->
+	<script src="js/less.js" type="text/javascript"></script>
 </head>
 
 <body>
 	<header>
 		<div class="wrap">
 			<h1>Portafolio Jaime Pérez Moena</h1>
-			<a><img class="logo" src="img/logo.png"/></a>
+			<a><img class="logo" src="img/logo.png" alt=""/></a>
 			<nav>
 				<ul>
 					<li><a href="#projects">Projects</a></li>
@@ -32,10 +38,10 @@
 				<a href="#">Category 1</a>, <a href="#">Category 2</a>, <a href="#">Category 3</a>
 				
 				<div class="gallery">
-					<img src="img/image-small.png" />
-					<img src="img/image-small.png" />
-					<img src="img/image-small.png" />
-					<img src="img/image-small.png" />
+					<img src="img/image-small.png" alt=""/>
+					<img src="img/image-small.png" alt=""/>
+					<img src="img/image-small.png" alt=""/>
+					<img src="img/image-small.png" alt=""/>
 				</div><!-- gallery -->
 				
 				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.</p>
@@ -44,31 +50,17 @@
 			
 			<aside>
 				<h3>Related projects</h3>
-				<figure>
-					<a href="#">
-						<img src="img/image-thumb.png" />
-						<h3>Project name</h3>
-						<figcaption>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur rid
-
-</figcaption>
-					</a>
-				</figure><!--figure 1-->
-
-				<figure>
-					<a href="#">
-						<img src="img/image-thumb.png" />
-						<h3>Project name</h3>
-						<figcaption>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur rid</figcaption>
-					</a>
-				</figure><!--figure 2-->
 				
 				<figure>
-					<a href="#">
-						<img src="img/image-thumb.png" />
-						<h3>Project name</h3>
-						<figcaption>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur rid</figcaption>
+					<a href="single-project.html">
+						<img src="img/image-thumb.png" alt=""/>
+						<h3>Title</h3>
 					</a>
-				</figure><!--figure 3-->
+					<figcaption>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur rid
+					</figcaption>
+				</figure><!--figure 1-->
+				
+				
 			</aside>
 			
 		</div><!-- .wrap -->
