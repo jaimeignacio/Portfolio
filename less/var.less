@@ -20,7 +20,9 @@
 @gray-light: lighten(@black, 75%);
 @gray-lighter: lighten(@black, 95%);
 @white: rgba(255, 255, 255, 1);
-@gray-special: rgba(97, 96, 122,1);
+
+@color: rgba(97, 96, 122,1);
+@transparent: fade(@black,70);
 
 //Color
 
@@ -40,10 +42,17 @@
 @link-invert:	spin(@link-color, 180);
 
 // Proporciones tipográficas
-@font-size: 14px; 
+@font-size: 16px; 
 @em: @font-size * 1em;	// atajo para salida en ems, ej. '12/@em'
 @line-height:	@font-size * 1.8;
 @small: @font-size*.8;
+
+@h1: @font-size*3;
+@h2: @font-size*2.2;
+@h3: @font-size*1.8;
+@h4: @font-size*1.4;
+@h5: @font-size*1.2;
+@h6: @font-size*1;
 
 //Grilla
 @wrap-width: 980px;
@@ -52,6 +61,9 @@
 @wrap-2: @wrap-width/2;
 @wrap-3: @wrap-width/3;
 @wrap-4: @wrap-width/4;
+@wrap-5: @wrap-width/5;
+@wrap-6: @wrap-width/6;
 
-
-
+//Otras
+@header-height:@font-size*2.5;
+@profile: @wrap-3;

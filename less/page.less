@@ -5,13 +5,30 @@ body{
 
 header {
 	width:100%;
-	background-color: @gray-special;
+	background-color: @color;
 	text-align:center;
 	color:@gray-lighter;
+	position:fixed;
+	z-index: 1;
+	height:@header-height;
+	h1{display:none;}
+	a, a:visited{
+		color:@white;
+		}
+	}
+
+footer{
+	.social{
+		float: right;
+		margin-top: @font-size/2;
+		a{
+			padding: 0 @font-size/4;
+			}
+		}
 	}
 
 .wrap{
-	margin:0 auto @font-size;
+	margin:0 auto;
 	width:@wrap-width;
 	display:block;
 	&:after{
@@ -26,14 +43,28 @@ img{
 	}
 
 nav{
+	text-transform: uppercase;
 	ul{
 		display:block;
-		margin-bottom:@font-size;
 		li{
 			display:inline-block;
+			&.logo{
+				position: relative;
+				top:30px;
+				margin-top: -20px;
+				padding: 0;
+				a{
+					padding:0;
+					width:@font-size*4;
+					&:hover{
+						background-color: transparent;
+						}
+					}
+				}
 			a{
 				padding:10px;
 				display:block;
+				width:@font-size*5;
 				&:hover{
 					background-color:@link-hover;
 					color:@white;
@@ -47,14 +78,8 @@ nav{
 
 /*content*/
 
-#projects{
-	
-	}
-
 .project{
-	
 	float:left;
-	
 	width:@wrap-4 - @font-size;
 	height:@wrap-4 - @font-size;
 	
@@ -99,34 +124,98 @@ nav{
 
 
 section{
-	padding:@font-size 0;
-	
+	padding:@header-height+@font-size 0 @font-size*2;
 	&:nth-child(even){
 		background-color:darken(@gray-lighter, 5%);
+		}
+	.wrap{
+		> h2{
+			text-align: center;
+			}
 		}
 	}
 
 .about-me{
-	float:left;
-	width:@wrap-2 - @font-size;
-	margin-right: @font-size;
-	
+	width: auto;
+	min-height:@profile;
+	background: @white;
+	.box-shadow(1px 1px 7px -6px @black);
+	margin-left: @profile/2;
+	position: relative;
 	img{
-		width:@wrap-4 - @font-size;
-		float:left;
-		margin-right: @font-size/2;
+		width:@profile;
+		height:@profile;
+		margin-left: -@profile/2;
+		margin-right: @font-size*3;
 		}
-	
+	p{
+		font-size: @h4;
+		line-height: @h2;
+		padding-top: @font-size*4;
+		padding-right: @font-size*3;
+		}
 	}
 
-form{
-	width: @wrap-2;
-	
+/*Sections*/
+
+#main{
+	background-color: @transparent;
+	color: @gray-light;
+	padding: @font-size 0;
+	}
+
+	hgroup{
+		margin: 25% 0;
+		text-align: center;
+		text-transform: uppercase;
+		h1, h2{
+			font-family: @sans;
+			text-shadow: 1px 1px 1px @gray-darker;
+			margin: 0;
+			}
+		h1{
+			font-weight: 600;
+			font-size: @font-size*4;
+			}
+		h2{
+			font-weight: 200;
+			font-size: @font-size*3.6;
+			}
+		}	
+
+.contact-form{
+
+		margin: 0 auto;
+		width: @wrap-2;
+		
+
 	legend{
-		margin-bottom:@font-size/2;
+		text-align: center;
+		width: 100%;
+		font-size: @h5;
+		margin-bottom: @font-size;
 		}
-	
-	label{
-		line-height:@line-height;
+	.btn{
+		float: right;
+		width: @wrap-3;
+		padding:@font-size/4;
 		}
 	}
+	
+	.form-group{
+		margin-bottom: @font-size;
+		&:after{
+			display: block;
+			content:"";
+			clear: both;
+			}
+		label{
+			width: @wrap-6;
+			float: left;
+			}
+		input, textarea{
+			float: right;
+			width: @wrap-3 - (@font-size/2)- 2;
+			padding:@font-size/4;
+			}
+		}
