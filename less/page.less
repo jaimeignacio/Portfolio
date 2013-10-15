@@ -154,6 +154,11 @@ section{
 		padding-top: @font-size*4;
 		padding-right: @font-size*3;
 		}
+	&:after{
+		content:"";
+		clear:both;
+		display:block;
+		}
 	}
 
 /*Sections*/
@@ -219,3 +224,67 @@ section{
 			padding:@font-size/4;
 			}
 		}
+
+/*Single Project*/
+
+.single-project{
+	width: 66%;
+	float: left;
+	.box-shadow(@shadow);
+	background: @white;
+	position: relative;
+	top: -@header-height;
+	padding-top: @header-height;
+	h2{
+		margin: 0;
+		}
+	}
+
+	.wrap-2{
+		padding: 0 @font-size;
+		}
+	
+	.gallery{
+		/*.columns(@colwidth: 250px, @colcount: 0, @colgap: 50px, @columnRuleColor: #EEE, @columnRuleStyle: solid, @columnRuleWidth: 1px);*/
+		padding: @font-size/2 0 0;
+		background-color: @gray-lighter;
+		margin: @font-size 0;
+		.columns(50%, 2, @font-size/2, none, none, none);
+		img{
+			width: 100%;
+			margin-bottom: @font-size/2;
+			&:first-child{
+				width: 200%;
+				}
+			}
+		}
+	
+
+aside{
+	width: 30%;
+	background: @transparent;
+	float: right;
+	text-align: center;
+	position: relative;
+	padding: @header-height 0 ;
+	top:-@header-height;
+	color: @gray-lighter;
+	a{
+		background: @gray;
+		display: block;
+		.transition(0.3s, ease-out);
+		&:hover{
+			background: @gray-light;
+			text-decoration: none;
+			}
+		img{
+			width: 90%;
+			}
+		}
+	figcaption{
+		font-size: @small;
+		line-height: 120%;
+		width: 90%;
+		margin: 0 auto;
+		}
+	}

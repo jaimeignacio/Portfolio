@@ -1,0 +1,100 @@
+@new-width: 90%;
+
+@media screen and (max-width: @wrap-width) {
+	
+	.wrap{
+		width: @new-width;
+		> .project{
+			float: none;
+			display: inline-block;
+			}
+		}
+	
+	#projects{
+		text-align: center;
+		}
+
+}/*end responsive for @wrap-width*/
+
+@media screen and (max-width: 768px){
+
+	.wrap{
+		.about-me{
+			margin: @profile/2 auto 0;
+			text-align: center;
+			img{
+				top: -@profile/2;
+				margin: 0 auto -@profile/2;
+				display: block;
+				float: none;
+				}
+			
+			p{
+				display: block;
+				width: 90%;
+				padding: @font-size 0;
+				margin: 0 auto;
+				}
+			}
+		}
+		
+		
+	.form-group{
+		text-align: center;
+		label{
+			float: none;
+			display: block;
+			width: 100%;
+			}
+		input, textarea{
+			float: none;
+			margin: 0 auto;
+			width: 90%;
+			padding: @font-size;
+			font-size: @font-size;
+			}
+		}
+	
+	.contact-form .btn{
+		float: none;
+		margin: 0 auto;
+		display: block;
+		width: 90% + @font-size/2;
+		padding: @font-size;
+		}
+		
+/*single-project*/
+	
+	.single-project{
+		width: 100%;
+		float: inherit;
+		}
+	
+	aside{
+		width: 80%;
+		margin: 0 auto;
+		float: none;
+		}
+
+	}/*end responsive for 768px*/
+
+@media screen and (max-width: 550px){
+
+	.wrap{
+		> .project{
+			width: 320px;
+			height: 320px;
+			}
+		}
+
+	.contact-form{
+		width: 100%;
+		}
+
+	}/*end responsive for 550px*/
+
+@media screen and (max-width: 480px){
+
+
+	
+	}
