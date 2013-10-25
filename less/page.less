@@ -106,7 +106,7 @@ nav{
 			}
 	
 	figcaption{
-		display:none;
+        .opacity(0);
 		position:absolute;
 		top:0;
 		left:0;
@@ -125,7 +125,11 @@ nav{
 		}/*figcaption*/
 	&:hover{
 		figcaption{
-			display:block;
+             -webkit-transition: opacity 0.3s ease-in-out;
+             -moz-transition: opacity 0.3s ease-in-out;
+             -o-transition: opacity 0.3s ease-in-out;
+             transition: opacity 0.3s ease-in-out;
+             .opacity(1);
 			}
 		}
 	}/*project*/
@@ -261,17 +265,37 @@ section{
 		/*.columns(@colwidth: 250px, @colcount: 0, @colgap: 50px, @columnRuleColor: #EEE, @columnRuleStyle: solid, @columnRuleWidth: 1px);*/
 		padding: @font-size/2 0 0;
 		background-color: @gray-lighter;
-		margin: @font-size 0;
-		.columns(50%, 4, @font-size/2, none, none, none);
+		margin: @font-size 0 0;
+        text-align:center;
+        span{
+            display:inline-block;
+            width:80px;
+            vertical-align:middle;
+            cursor:pointer;
+            }
 		img{
 			width: 100%;
 			margin-bottom: @font-size/2;
-			&:first-child{
-				width: 200%;
-				}
 			}
 		}
-	
+
+    .photo{
+        width:80%;
+        padding: 10px 10%;
+        height:400px;
+        background:@gray-light;
+        overflow:hidden;
+        margin-bottom:@font-size;
+        > div{
+            height:100%;
+            }
+        img{
+            width:auto;
+            max-height:100%;
+            display:block;
+            margin:0 auto;
+            }
+        }
 
 aside{
 	width: 30%;
