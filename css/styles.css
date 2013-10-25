@@ -49,8 +49,8 @@ hgroup h2{font-weight:200;font-size:57.6px;}
 .single-project{width:66%;float:left;-webkit-box-shadow:1px 1px 4px -1px rgba(0, 0, 0, 0.2);-moz-box-shadow:1px 1px 4px -1px rgba(0, 0, 0, 0.2);box-shadow:1px 1px 4px -1px rgba(0, 0, 0, 0.2);background:#ffffff;position:relative;top:-40px;padding-top:40px;padding-bottom:16px;}.single-project h2{margin:16px 0 8px;line-height:120%;}
 .single-project a{font-size:12.8px;}
 .wrap-2{padding:0 16px;}
-.gallery{padding:8px 0 0;background-color:#f2f2f2;margin:16px 0 0;text-align:center;}.gallery span{display:inline-block;width:80px;vertical-align:middle;cursor:pointer;}
-.gallery img{width:100%;margin-bottom:8px;}
+.gallery{padding:8px 0 0;background-color:#f2f2f2;margin:16px 0 0;text-align:center;}.gallery span{display:inline-block;width:80px;height:80px;overflow:hidden;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;vertical-align:middle;cursor:pointer;}
+.gallery img{max-width:200%;margin-bottom:8px;position:relative;left:-50%;}
 .photo{width:80%;padding:10px 10%;height:400px;background:#bfbfbf;overflow:hidden;margin-bottom:16px;}.photo>div{height:100%;}
 .photo img{width:auto;max-height:100%;display:block;margin:0 auto;}
 aside{width:30%;background:rgba(0, 0, 0, 0.7);float:right;text-align:center;position:relative;padding:40px 0;top:-40px;color:#f2f2f2;}aside.related{background:rgba(97, 96, 122, 0.7);}aside.related a,aside.related a:visited{color:rgba(51, 47, 122, 0.95);font-size:16px;}
